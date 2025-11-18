@@ -1,0 +1,32 @@
+{
+  "name": "griiv/category",
+  "description": "Modify the category parts",
+  "authors": [
+    {
+      "name": "Griiv - Arnaud Scoté",
+      "email": "arnaud@griiv.fr"
+    }
+  ],
+  "config": {
+    "preferred-install": "dist",
+    "optimize-autoloader": true,
+    "prepend-autoloader": false
+  },
+  "autoload": {
+    "psr-4": {
+      "Griiv\\Category\\": "src/"
+    },
+    "classmap": [
+      "gcategory.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Griiv\\Category\\Tests\\": "tests/"
+    }
+  },
+  "type": "prestashop-module",
+  "require": {
+    "griiv/prestashop-module-contracts": "dev-main"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "griiv/customer",
+  "description": "Modify the account parts",
+  "authors": [
+    {
+      "name": "Griiv - Arnaud Scoté",
+      "email": "arnaud@griiv.fr"
+    }
+  ],
+  "config": {
+    "preferred-install": "dist",
+    "optimize-autoloader": true,
+    "prepend-autoloader": false
+  },
+  "autoload": {
+    "psr-4": {
+      "Griiv\\Customer\\": "src/"
+    },
+    "classmap": [
+      "gcustomer.php"
+    ]
+  },
+  "type": "prestashop-module",
+  "require": {
+    "griiv/prestashop-module-contracts": "dev-main"
+  }
+}

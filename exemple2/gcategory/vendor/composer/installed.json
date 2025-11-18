@@ -1,0 +1,50 @@
+{
+    "packages": [
+        {
+            "name": "griiv/prestashop-module-contracts",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/griiv-git/prestashop-module-contracts.git",
+                "reference": "cbfea646b2466d13c92941327eded7824d5ebe3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/griiv-git/prestashop-module-contracts/zipball/cbfea646b2466d13c92941327eded7824d5ebe3e",
+                "reference": "cbfea646b2466d13c92941327eded7824d5ebe3e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "time": "2025-11-12T22:19:58+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Griiv\\Prestashop\\Module\\Contracts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arnaud Scoté",
+                    "email": "arnaud@griiv.fr"
+                }
+            ],
+            "description": "Prestashop Module interface and Hook interface",
+            "support": {
+                "issues": "https://github.com/griiv-git/prestashop-module-contracts/issues",
+                "source": "https://github.com/griiv-git/prestashop-module-contracts/tree/main"
+            },
+            "install-path": "../griiv/prestashop-module-contracts"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

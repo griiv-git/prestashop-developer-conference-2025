@@ -1,0 +1,16 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  griiv.prestashop.module.contracts.context:
+    class: Context
+    factory: [ 'Context', 'getContext' ]
+
+
+  griiv.prestashop.module.contracts.hook.hook:
+    class: Griiv\Prestashop\Module\Contracts\Hook\Hook
+    public: true
+    arguments:
+      - '@griiv.prestashop.module.contracts.context'

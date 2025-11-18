@@ -1,0 +1,64 @@
+services:
+  _defaults:
+    public: true
+
+  Griiv\Category\Hook\Action\ActionCategoryGridDefinitionModifier:
+    class: Griiv\Category\Hook\Action\ActionCategoryGridDefinitionModifier
+    parent: 'griiv.prestashop.module.contracts.hook.hook'
+    public: true
+
+  Griiv\Category\Hook\Action\ActionCategoryGridQueryBuilderModifier:
+    class: Griiv\Category\Hook\Action\ActionCategoryGridQueryBuilderModifier
+    parent: 'griiv.prestashop.module.contracts.hook.hook'
+    public: true
+
+  Griiv\Category\Hook\Action\ActionAfterCreateCategoryFormHandler:
+    class: Griiv\Category\Hook\Action\ActionAfterCreateCategoryFormHandler
+    parent: 'griiv.prestashop.module.contracts.hook.hook'
+    public: true
+
+  Griiv\Category\Hook\Action\ActionAfterUpdateCategoryFormHandler:
+    class: Griiv\Category\Hook\Action\ActionAfterUpdateCategoryFormHandler
+    parent: 'griiv.prestashop.module.contracts.hook.hook'
+    public: true
+
+  Griiv\Category\Hook\Action\ActionCategoryFormBuilderModifier:
+    class: Griiv\Category\Hook\Action\ActionCategoryFormBuilderModifier
+    parent: 'griiv.prestashop.module.contracts.hook.hook'
+    public: true
+
+  Griiv\Category\Hook\Action\ActionCategoryFormDataProviderData:
+    class: Griiv\Category\Hook\Action\ActionCategoryFormDataProviderData
+    parent: 'griiv.prestashop.module.contracts.hook.hook'
+    public: true
+
+  Griiv\Category\Hook\Action\ActionProductFormBuilderModifier:
+    class: Griiv\Category\Hook\Action\ActionProductFormBuilderModifier
+    parent: 'griiv.prestashop.module.contracts.hook.hook'
+    public: true
+
+  Griiv\Category\Hook\Action\ActionAfterUpdateProductFormHandler:
+    class: Griiv\Category\Hook\Action\ActionAfterUpdateProductFormHandler
+    parent: 'griiv.prestashop.module.contracts.hook.hook'
+    public: true
+
+  Griiv\Category\Hook\Action\ActionGetProductPropertiesAfter:
+    class: Griiv\Category\Hook\Action\ActionGetProductPropertiesAfter
+    parent: 'griiv.prestashop.module.contracts.hook.hook'
+    public: true
+
+  Griiv\Category\Hook\Action\ActionProductFormDataProviderData:
+    class: Griiv\Category\Hook\Action\ActionProductFormDataProviderData
+    parent: 'griiv.prestashop.module.contracts.hook.hook'
+    public: true
+
+  Griiv\Category\Hook\Action\ActionProductGridDefinitionModifier:
+    class: Griiv\Category\Hook\Action\ActionProductGridDefinitionModifier
+    parent: 'griiv.prestashop.module.contracts.hook.hook'
+    public: true
+
+  #ActionProductGridQueryBuilderModifier
+  Griiv\Category\Hook\Action\ActionProductGridQueryBuilderModifier:
+    class: Griiv\Category\Hook\Action\ActionProductGridQueryBuilderModifier
+    parent: 'griiv.prestashop.module.contracts.hook.hook'
+    public: true

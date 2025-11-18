@@ -1,0 +1,33 @@
+services:
+  _defaults:
+    public: true
+
+
+  griiv.prestashop.module.contracts.context:
+    class: Context
+    factory: [ 'Context', 'getContext' ]
+
+
+  griiv.prestashop.module.contracts.hook.hook:
+    class: Griiv\Prestashop\Module\Contracts\Hook\Hook
+    public: true
+    arguments:
+      - '@griiv.prestashop.module.contracts.context'
+
+
+  griiv_customer_my_service:
+    class: Griiv\Customer\Service\MyService
+    decorates: 'griiv_category_my_service'
+    public: true
+    arguments:
+        - '@griiv_customer_my_service.inner'
+
+
+  Griiv\Customer\Hook\Display\DisplayTop:
+    class: Griiv\Customer\Hook\Display\DisplayTop
+    public: true
+    arguments:
+        - '@griiv.prestashop.module.contracts.context'
+        - '@griiv_customer_my_service'
+
+
