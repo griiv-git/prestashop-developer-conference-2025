@@ -20,11 +20,6 @@
       "gcategory.php"
     ]
   },
-  "autoload-dev": {
-    "psr-4": {
-      "Griiv\\Category\\Tests\\": "tests/"
-    }
-  },
   "type": "prestashop-module",
   "require": {
     "griiv/prestashop-module-contracts": "dev-main"
